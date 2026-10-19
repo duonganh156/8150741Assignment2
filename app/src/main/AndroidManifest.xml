@@ -4,21 +4,29 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".RoamApplication"
         android:allowBackup="false"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Roam">
         <activity
-            android:name=".RoamApplication"
+            android:name=".ui.login.LoginActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.dashboard.DashboardActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.details.DetailsActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

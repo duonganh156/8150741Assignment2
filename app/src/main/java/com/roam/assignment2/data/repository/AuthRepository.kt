@@ -1,4 +1,4 @@
-package com.roam.assignment2.data.repositories
+package com.roam.assignment2.data.repository
 
 import com.roam.assignment2.data.remote.NitApiService
 import com.roam.assignment2.data.remote.dto.LoginRequest
