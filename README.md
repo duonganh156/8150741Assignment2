@@ -17,7 +17,7 @@ returned entities in a `RecyclerView`, and shows every field of a tapped entity 
 - **Hilt** (via KSP) for dependency injection
 - Retrofit + OkHttp + Gson for networking
 - Coroutines + `StateFlow` + `ViewModel`
-- JUnit + `kotlinx-coroutines-test` for unit tests (hand-written fakes, no mocking library)
+- JUnit + `kotlinx-coroutines-test` for unit tests (handwritten fakes, no mocking library)
 
 ## Requirements
 
@@ -101,6 +101,4 @@ Run from Android Studio (right-click `app/src/test` → *Run Tests*) or with `./
 | --- | --- |
 | `LoginViewModelTest` | validation, loading state, success, failure, trimming, double-submit, retry |
 | `DashboardViewModelTest` | load on start, error, missing keypass, retry, empty list |
-| `AuthRepositoryImplTest` / `DashboardRepositoryImplTest` | request mapping and HTTP/IO error → message mapping |
-| `EntityMapperTest` | description split, field order, number formatting, nulls, total fallback |
-| `EntityTest`, `TextFormattingTest`, `SafeApiCallTest` | model helpers, label formatting, error wrapper (incl. cancellation) |
+| `AuthRepositoryImplTest` | request mapping and HTTP/IO error → message mapping |
